@@ -1,0 +1,14 @@
+ .footer__sosial{
+    &-list{
+        list-style: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 75px 0 ;
+
+    }
+
+    &-item{
+        margin-right: 30px;
+    }
+ }

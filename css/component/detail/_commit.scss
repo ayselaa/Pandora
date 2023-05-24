@@ -1,0 +1,159 @@
+.commit {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px 0;
+
+    &Detail {
+        display: none;
+        width: 60%;
+        margin: 0 auto 20px;
+        input,
+        textarea {
+            padding: 8px 12px;
+            width: 100%;
+            background: rgba(0, 0, 0, 0);
+            border-radius: 4px;
+            box-sizing: border-box;
+            border: 1px solid #cecece;
+            box-shadow: none;
+            outline: none;
+            margin-top: 8px;
+        }
+        &__title {
+            font-family: "PanText", sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 23px;
+            color: #5e5e5e;
+        }
+
+        &__icons .fa-star {
+            color: #cecece;
+            cursor: pointer;
+            padding: 10px 0;
+        }
+
+        &__icons .fa-star.active {
+            color: rgb(255, 206, 7);
+        }
+
+        &__group {
+            display: block;
+            margin-bottom: 16px;
+
+            &Button {
+                display: flex;
+                align-items: center;
+
+                &-submit,
+                &-cancel {
+                    position: relative;
+                    cursor: pointer;
+                    outline: none;
+                    text-decoration: none;
+                    vertical-align: baseline;
+                    text-align: center;
+                    padding: 0 32px;
+                    font-size: 15px;
+                    font-weight: 400;
+                    border-radius: 4px;
+                    line-height: 36px;
+                    border: none;
+                }
+
+                &-submit {
+                    color: #fff;
+                    margin-right: 10px;
+                    background-color: #5e5e5e;
+                    opacity: 0.7;
+                }
+
+                &-cancel {
+                    background-color: #fff;
+                    color: #5e5e5e;
+                    border: 1px solid #5e5e5e;
+                }
+
+
+                @media screen and (max-width:900px) {
+                    display: block;
+
+                    
+                &-submit,
+                &-cancel {
+                    width: 100%;
+                    margin: 10px 0;
+                }
+
+
+                }
+            }
+        }
+
+        &__subtitle {
+            font-family: "PanText", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #5e5e5e;
+            display: block;
+            margin-bottom: 8px;
+        }
+    }
+
+    &__box {
+        .commit__icons {
+            margin-bottom: 15px;
+            cursor: pointer;
+            color: rgb(255, 206, 7);
+        }
+    }
+
+    &__btn {
+        font-family: "PanText", sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 36px;
+        text-align: center;
+        color: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+        background: #000000;
+    }
+
+    &__icons {
+        margin-bottom: 15px;
+        color: #cecece;
+    }
+    &__text {
+        font-family: "PanText", sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 14px;
+        text-align: center;
+    }
+    &__title {
+        font-family: "PanText", sans-serif;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    &__subtitle {
+        font-family: "PanText", sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 1300px) {
+        & {
+            display: block;
+            text-align: center;
+        }
+    }
+}

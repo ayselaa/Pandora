@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <title>Basket</title>
+
+   
+  </head>
+  <body>
+    <main>
+      <div class="payBasket">
+        <div class="payBasketleftSide">
+          <img
+            class="payBasketleftSide__logo"
+            src="./img/logo.png"
+            alt="logo.png"
+          />
+          <div class="payBasketToggle">
+            <span class="payBasketToggle__box">
+              <span class="payBasketToggle__box-title">
+                <img src="./svg/shopCart.svg" alt="shopCart" /> Sifariş
+                xülasəsini göstərin</span
+              >
+
+              <span class="payBasketToggle__box-price">140 AZN</span>
+            </span>
+            <div class="payBasketToggle__bg">
+              <div class="payBasketRightSide__box payBasketRightSide__bottom">
+                <div class="payBasketRightSide__imgBox">
+                  <div>
+                    <img
+                      class="payBasketRightSide__img"
+                      src="img/img.svg"
+                      alt=""
+                    />
+                    <span class="payBasketRightSide__count">5</span>
+                  </div>
+
+                  <div>
+                    <h1 class="payBasketRightSide__title">
+                      925 əyarlı gümüş boyunbağı, Pandora
+                    </h1>
+                    <p class="payBasketRightSide__size">45</p>
+                  </div>
+                </div>
+
+                <div>
+                  <span class="payBasketRightSide__price">645,00 AZN</span>
+                </div>
+              </div>
+
+              <div class="payBasketRightSide__box payBasketRightSide__bottom">
+                <input type="text" class="payBasketRightSide__input" />
+                <button
+                  class="submit payBasketRightSide__submit"
+                  disabled="true"
+                  type="submit"
+                >
+                  Müraciət edin
+                </button>
+              </div>
+
+              <div class="payBasketRightSide__bottom">
+                <div class="payBasketleftSide__justify">
+                  <span class="payBasketRightSide__totalTitle">Cəmi</span>
+                  <span class="payBasketRightSide__totalPrice">645,00 AZN</span>
+                </div>
+                <div class="payBasketleftSide__justify">
+                  <span class="payBasketRightSide__totalTitle">Daşınma</span>
+                  <span class="payBasketRightSide__totalText"
+                    >Növbəti mərhələdə hesablanır</span
+                  >
+                </div>
+              </div>
+
+              <div class="payBasketleftSide__justify">
+                <span class="payBasketRightSide__totalTitle">Cəmi</span>
+                <span class="payBasketRightSide__totalPriceBig"
+                  >645,00 AZN</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="banner">
+            <a href="#">Məlumat</a>
+            <span>›</span>
+            <a href="#">Nəqliyyat</a>
+            <span>›</span>
+            <a href="#">Ödəniş</a>
+          </div>
+<div class="mobBucketPay">
+
+          <div class="payBasketleftSide__justify">
+            <h1 class="payBasketleftSide__title">Əlaqə məlumatı</h1>
+            <p class="payBasketleftSide__desc">
+              Hesabınız var?
+              <a class="payBasketleftSide__loginLink" href="#">DAXİL OLUN</a>
+            </p>
+          </div>
+
+          <div>
+            <div class="form-group">
+              <input
+                class="payBasketleftSide__input"
+                id="EmailInput"
+                type="email"
+                placeholder="E-mail"
+              />
+              <label
+                class="payBasketleftSide__lable payBasketleftSide__placholder"
+                for="EmailInput"
+              >
+                E-mail
+              </label>
+            </div>
+
+            <label class="payBasketleftSide__lable" for="checkboxForPay">
+              <input id="checkboxForPay" type="checkbox" />
+              Xəbərlər və təkliflər olan e-poçtlar almaq istəyirəm
+            </label>
+          </div>
+
+          <h1 class="payBasketleftSide__title">Çatdırılma ünvanı</h1>
+
+          <form>
+            <div class="form-group">
+              <select
+                class="payBasketleftSide__input"
+                type="text"
+                id="counteryInput"
+                placeholder="Ölkə/Region"
+              >
+            
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+
+            </select>
+              <label
+                class="payBasketleftSide__lable payBasketleftSide__placholder"
+                for="counteryInput"
+              >
+                Ölkə/Region
+              </label>
+            </div>
+
+            <div class="payBasketleftSide__justify">
+              <div class="form-group">
+                <input
+                  class="payBasketleftSide__input"
+                  type="text"
+                  id="name"
+                  placeholder="Ad (istəyə görə)"
+                />
+                <label
+                  class="payBasketleftSide__lable payBasketleftSide__placholder"
+                  for="name"
+                >
+                  Ad (istəyə görə)
+                </label>
+              </div>
+
+              <div class="form-group">
+                <input
+                  class="payBasketleftSide__input"
+                  type="text"
+                  id="surname"
+                  placeholder="Soyad"
+                />
+                <label
+                  class="payBasketleftSide__lable payBasketleftSide__placholder"
+                  for="surname"
+                >
+                  Soyad
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input
+                class="payBasketleftSide__input"
+                type="text"
+                id="surname"
+                placeholder="Şirkət (istəyə görə)"
+              />
+              <label
+                class="payBasketleftSide__lable payBasketleftSide__placholder"
+                for="surname"
+              >
+                Şirkət (istəyə görə)
+              </label>
+            </div>
+
+            <div class="form-group">
+              <input
+                class="payBasketleftSide__input"
+                type="text"
+                id="adress"
+                placeholder="Adress"
+              />
+
+              <label
+                class="payBasketleftSide__lable payBasketleftSide__placholder"
+                for="adress"
+              >
+                Adress
+              </label>
+            </div>
+            <div class="form-group">
+              <input
+                class="payBasketleftSide__input"
+                type="text"
+                id="apartment"
+                placeholder="Mənzil, otaq və s. (isteğe bağlı)"
+              />
+
+              <label
+                class="payBasketleftSide__lable payBasketleftSide__placholder"
+                for="apartment"
+              >
+                Mənzil, otaq və s. (isteğe bağlı)
+              </label>
+            </div>
+
+            <div class="payBasketleftSide__justify">
+              <div class="form-group">
+                <input
+                  class="payBasketleftSide__input"
+                  type="text"
+                  placeholder="Poçt kodu"
+                  id="mail"
+                />
+
+                <label
+                  class="payBasketleftSide__lable payBasketleftSide__placholder"
+                  for="mail"
+                >
+                  Poçt kodu
+                </label>
+              </div>
+              <div class="form-group">
+                <input
+                  class="payBasketleftSide__input"
+                  type="text"
+                  placeholder="ŞƏHƏR"
+                  id="city"
+                />
+                <label
+                  class="payBasketleftSide__lable payBasketleftSide__placholder"
+                  for="city"
+                >
+                  ŞƏHƏR
+                </label>
+              </div>
+              <div class="form-group village" >
+                <select
+
+                  class="payBasketleftSide__input"
+                  type="text"
+                  id="village"
+                  placeholder="Rayon"
+                >
+            
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
+                <label
+                  class="payBasketleftSide__lable payBasketleftSide__placholder"
+                  for="village"
+                >
+                  Rayon
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input
+                class="payBasketleftSide__input"
+                type="text"
+                id="phone"
+                placeholder="Telefon"
+              />
+
+              <label
+                class="payBasketleftSide__lable payBasketleftSide__placholder"
+                for="phone"
+              >
+                Telefon
+              </label>
+            </div>
+
+            <label class="payBasketleftSide__lable">
+              <input type="checkbox" />
+              Bu məlumatı növbəti dəfə saxlamaq üçün saxlayın
+            </label>
+
+            <button class="submit payBasketleftSide__submit" type="submit">
+              Göndərməyə davam edin
+            </button>
+          </form>
+
+          <hr style="margin-top: 105px" />
+
+          <ul class="payBasketleftSide__list">
+            <li class="payBasketleftSide__item">
+              <a class="payBasketleftSide__link" href="#"
+                >Politica de rambursare</a
+              >
+            </li>
+            <li class="payBasketleftSide__item">
+              <a class="payBasketleftSide__link" href="#"
+                >Politica de confidențialitate</a
+              >
+            </li>
+            <li class="payBasketleftSide__item">
+              <a class="payBasketleftSide__link" href="#"
+                >Termeni de utilizare</a
+              >
+            </li>
+          </ul>
+
+
+        </div>
+    </div>
+
+        <div class="payBasketRightSide">
+          <div class="payBasketRightSide__box payBasketRightSide__bottom">
+            <div class="payBasketRightSide__imgBox">
+              <div>
+                <img class="payBasketRightSide__img" src="img/img.svg" alt="" />
+                <span class="payBasketRightSide__count">5</span>
+              </div>
+              <div>
+                <h1 class="payBasketRightSide__title">
+                  925 əyarlı gümüş boyunbağı, Pandora
+                </h1>
+                <p class="payBasketRightSide__size">45</p>
+              </div>
+            </div>
+
+            <div>
+              <span class="payBasketRightSide__price">645,00 AZN</span>
+            </div>
+          </div>
+
+          <div class="payBasketRightSide__box payBasketRightSide__bottom">
+            <div class="form-group">
+              <input type="text" class="payBasketRightSide__input payBasketleftSide__input" style="margin: 0;"  id="discount" placeholder=" Hədiyyə kartı və ya endirim kodu" />
+
+              <label
+                class="payBasketleftSide__lable payBasketleftSide__placholder"
+                for="discount"
+              >
+                Hədiyyə kartı və ya endirim kodu
+              </label>
+            </div>
+            <button
+              class="submit payBasketRightSide__submit"
+              disabled="true"
+              type="submit"
+            >
+              Müraciət edin
+            </button>
+          </div>
+
+          <div class="payBasketRightSide__bottom">
+            <div class="payBasketleftSide__justify">
+              <span class="payBasketRightSide__totalTitle">Cəmi</span>
+              <span class="payBasketRightSide__totalPrice">645,00 AZN</span>
+            </div>
+            <div class="payBasketleftSide__justify">
+              <span class="payBasketRightSide__totalTitle">Daşınma</span>
+              <span class="payBasketRightSide__totalText"
+                >Növbəti mərhələdə hesablanır</span
+              >
+            </div>
+          </div>
+
+          <div class="payBasketleftSide__justify">
+            <span class="payBasketRightSide__totalTitle">Cəmi</span>
+            <span class="payBasketRightSide__totalPriceBig">645,00 AZN</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

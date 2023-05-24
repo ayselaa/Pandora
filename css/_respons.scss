@@ -1,0 +1,102 @@
+@media screen and (min-width: 1300px) {
+    .conteniar {
+        width: 1000px;
+    }
+}
+
+@media only screen and (max-width: 1299px) {
+    .conteniar {
+        width: 900px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 1200px) {
+    .conteniar {
+        width: 90%;
+    }
+
+    .footer__menu-mob{
+        display: block !important;
+    }
+
+  
+
+    .header__info {
+        display: flex;
+
+        .logo { 
+            margin: auto;
+        }
+        .header__box-form-mob {
+            display: flex;
+            align-items: center;
+            .header__box-icon-mob {
+                display: block;
+                width: 20px;
+                margin-right: 2px;
+            }
+        }
+    }
+    .header__box-lang,.header__box-user {
+        display: none;
+    }
+
+    .header__box-group{
+        margin-right: 10px;
+    }
+
+    .header__box-icons img{
+        margin-right: 0;
+    }
+
+   
+    .forgotPass,
+    .setup,
+    .registerPass{
+        width: 100% !important;
+    }
+    .nav,.footer__menu{
+        display: none;
+    }
+
+    .grid-item {
+        width: 49% !important; /* Four equal columns */
+    }
+
+
+    .lightbox-content{
+        width: 80%;
+        height: 60%;
+        margin: 15% auto;
+    }
+
+   
+
+   
+}
+
+
+@media only screen and (max-width: 550px) {
+    .header__box-form{
+        display: none;
+    }
+
+    .header__box-form-mobIcon{
+        display: block !important;
+        margin-right: 10px;
+
+        img{
+            width: 20px;
+        }
+    }
+    .grid-item {
+        width: 100% !important; /* Four equal columns */
+    }
+
+    .lightbox-content{
+        width: 90%;
+        margin: 20px auto;
+    }
+}

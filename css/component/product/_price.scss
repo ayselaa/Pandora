@@ -1,0 +1,30 @@
+#min-value,
+#max-value{
+    visibility: hidden;
+}
+  
+.price{
+    padding: 10px;
+}
+
+.noUi-connect{
+    background-color: black !important;
+}
+
+.noUi-horizontal .noUi-handle{
+    border-radius: 50%;
+    height: 20px  !important;
+    width: 20px !important;
+    cursor: pointer;
+
+    &::before,
+    &::after{
+        content: '' ;
+        display: none;
+    }
+}
+
+.noUi-horizontal{
+    height: 8px !important;
+
+}

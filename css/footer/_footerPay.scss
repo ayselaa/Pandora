@@ -1,0 +1,26 @@
+.footer__copy{
+    &-list{
+        list-style: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 46px 0 17px ;
+
+    }
+
+    &-item{
+        margin-right: 10px;
+    }
+
+    &-con{
+        text-align: center;
+        color: #000000BF;
+        font-family: 'Inter',sans-serif;
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 17px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+ }

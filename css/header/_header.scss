@@ -1,0 +1,129 @@
+@import "./topSticky";
+@import "./megaMenu";
+@import "./banner";
+@import "./lang";
+
+.header {
+    position: fixed;
+    top: 0px;
+    background-color: #fff;
+    padding: 20px 0;
+    z-index: 1;
+
+    width: 100%;
+    &:hover {
+        .header__info {
+            border-bottom: 4px solid #ffcad4;
+        }
+    }
+
+    &.active {
+        position: fixed;
+        background-color: #fff;
+        width: 100%;
+    }
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 4px solid transparent;
+
+        .header__box-icon-mob,
+        .header__box-form-mobIcon {
+            display: none;
+        }
+        .logo {
+            height: 78px;
+            width: 140px;
+        }
+
+        &.active {
+            border-bottom: 4px solid #ffcad4;
+        }
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 0 0;
+
+
+        &-form{
+            position: relative;
+        }
+
+        &-group {
+            position: relative;
+            margin-right: 61px;
+        }
+
+        &-form-mob {
+            display: none;
+        }
+
+        &-icons {
+            display: flex;
+            align-items: center;
+            img {
+                margin-right: 5px;
+            }
+        }
+
+        &-user{
+            width: 20px;
+            height: 20px;
+        }
+
+        &-busket{
+            width: 35px;
+            height: 35px;
+        }
+
+        .busket__count{
+            position: relative;
+            top: 3px;
+
+            span{
+                position: absolute;
+                left: 18px;
+                bottom: 12px;
+                background: black;
+                border-radius: 50%;
+                width: 12px;
+                height: 12px;
+                line-height: 13px;
+                text-align: center;
+                color: #fff;
+                font-size: 8px;
+            }
+        }
+
+        &-icon {
+            position: absolute;
+            left: 10px;
+            width: 20px;
+            top: 10px;
+        }
+
+        &-input {
+            height: 40px;
+            width: 247px;
+            border: 1px solid #ededed;
+            padding: 13px 54px 13px 41px;
+            color: #27251f;
+            font-family: "PanText", sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 15px;
+
+            outline: none;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+
+    
+}

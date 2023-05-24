@@ -1,0 +1,51 @@
+  .form-group,.setup__box-group {
+        position: relative;
+        transition: all .15s ease-out 0s;
+        width: 100%;
+
+        &:first-child {
+            margin-right: 10px;
+        }
+
+        &:last-child {
+            margin-left: 10px;
+        }
+
+      }
+      .payBasketleftSide__placholder {
+        display:none;
+        font-size: 10px;
+      }
+
+      .payBasketleftSide__input:focus::placeholder,
+      .setup__box-input:focus::placeholder {
+        color: transparent;
+        transition: all .15s ease-out 0s;
+
+      }
+
+      .payBasketleftSide__input:focus + label,
+      .payBasketleftSide__input:not(:placeholder-shown) + label,
+      .setup__box-input:focus + label,
+      .setup__box-input:not(:placeholder-shown) + label{
+        position: absolute;
+        top: 0;
+        font-size: 10px;
+        left: 10px;
+        transform: translateY(20%);
+        display: block;
+        transition: all .15s ease-out 0s;
+      }
+
+      .payBasketleftSide__input:not(:placeholder-shown),
+      .setup__box-input:not(:placeholder-shown) {
+        padding-top: 15px;
+        transition: all .15s ease-out 0s;
+
+      }
+
+      .payBasketleftSide__input:focus + label {
+        transform: translateY(0%);
+        transition: all .15s ease-out 0s;
+
+      }

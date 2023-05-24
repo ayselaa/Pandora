@@ -1,0 +1,199 @@
+@import './emptyBasket';
+@import './payBasket/payBasket';
+
+.basket {
+    &Box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        &__title {
+            font-family: "PanText", sans-serif;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 24px;
+        }
+        &__link {
+            font-family: "PanText", sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #000;
+
+            text-decoration: underline;
+        }
+    }
+    table {
+        width: 100%;
+    }
+    th {
+        font-family: "PanText", sans-serif;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        color: #3e3e3e;
+    }
+
+    &__num {
+        border: 1px solid #ebebeb;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        width: 140px;
+
+       
+
+        input {
+            background-color: transparent;
+            border: none;
+            text-align: center;
+            width: 80%;
+            -moz-appearance: textfield;
+ 
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+
+        button {
+            background-color: transparent;
+            border: none;
+            width: 50px;
+            cursor: pointer;
+        }
+    }
+
+    .checkout{
+        position: relative;
+    }
+     
+    &__flex {
+        display: flex;
+        padding-top: 4rem;
+
+    }
+
+    &__img {
+        width: 140px;
+        margin-right: 20px;
+        height: 140px;
+        border: 1px solid #f2f2f2;
+    }
+
+    &__title {
+        font-family: "PanText", sans-serif;
+        font-size: 23px;
+        font-weight: 500;
+        line-height: 24px;
+        margin: 0;
+    }
+
+    &__price {
+        font-family: "PanText", sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 27px;
+        margin: 16px 0;
+    }
+
+    &__size {
+        font-family: "PanText", sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    &Total {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        &__title {
+            font-family: "PanText", sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            color: #3e3e3e;
+            margin-right: 10px;
+        }
+
+        &__price {
+            font-family: "PanText", sans-serif;
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 27px;
+        }
+
+        &__adv {
+            font-family: "PanText", sans-serif;
+            font-size: 11px;
+            font-weight: 400;
+            margin-top: 20px;
+            line-height: 20px;
+            color: #1b1b1b;
+        }
+
+        &__link {
+            height: 47px;
+            width: 236;
+            padding: 15px 33px 15px 32px;
+            background-color: #000000;
+            color: #fff;
+            margin-top: 20px;
+        }
+    }
+    &__desktop{
+&-box{
+    display: flex;
+align-items: center;
+
+
+i{
+    margin-left: 10px;
+}
+}
+
+      
+    }
+    &__numMob{
+        margin-top: 20px;
+        display: none;
+    }
+    @media screen and (max-width:900px) {
+        &__desktop{
+            display: none;
+        }
+
+        &__numMob{
+            display: flex;
+            align-items: center;
+i{
+    margin-left: 10px;
+}
+        }
+    }
+
+    @media screen and (max-width:900px) {
+       &__img{
+        width: 100%;
+        margin-right:0
+       }
+        &__flex {
+            display: block;
+    
+        }
+
+        td:last-child{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}

@@ -1,0 +1,87 @@
+.kolleksiya {
+    margin-top: 70px;
+
+    &__title {
+        font-family: "PanText", sans-serif;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 34px;
+        margin-bottom: 34px;
+        color: #1b1b1b;
+    }
+
+    &__link {
+        padding: 15px 33px 15px 32px;
+        background-color: #000000;
+        color: #fff;
+        height: 49px;
+        width: 182px;
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__flex {
+        display: flex;
+        margin-bottom: 41px;
+    }
+
+    &__box {
+        margin-left: 8px;
+        width: 269px;
+        margin-bottom: 20px;
+        cursor: pointer;
+
+        &:first-child{
+            margin: 0;
+        }
+
+        
+        &-img {
+            background-color: #f3f3f3;
+            height: 269px;
+            width: 100%;
+        }
+        &-title {
+            font-family: "PanText", sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 17px;
+            color: #000;
+            margin-top: 18px;
+            border-bottom: 1px solid transparent;
+
+            
+        }
+        &-price {
+            margin-top: 20px;
+            font-family: "PanText", sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 1px;
+        }
+
+        &:hover{
+            .kolleksiya__box-title{
+            border-bottom: 1px solid black;
+           }
+
+        }
+    }
+
+    @media screen and (max-width:1299px){
+        &__flex{
+            flex-wrap: wrap;
+        }
+}
+    @media screen and (max-width:615px) {
+        &__box{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

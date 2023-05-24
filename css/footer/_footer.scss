@@ -1,0 +1,53 @@
+@import "./footerSosial";
+@import "./footerPay";
+
+.footer {
+    margin-top: 125px;
+    background-color: #f3f3f3;
+    &__menu {
+        margin-bottom: 60px;
+        display: flex;
+        &-box {
+            padding-right: 100px;
+
+            &:last-child{
+                padding: 0;
+            }
+        }
+
+        &-title {
+            font-family: "PanText", sans-serif;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 23px;
+            color:#1B1B1B ;
+            margin-bottom: 30px;
+        }
+
+        &-list {
+            list-style: none;
+        }
+
+        &-item {
+            margin-bottom: 21px;
+
+        }
+
+        &-link {
+            position: relative;
+            display: inline-block;
+            font-family: "PanText", sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 25px;
+            color: #000000bf;
+            transition: visibility .5s linear;
+            border-bottom: 1px solid transparent;
+
+            &:hover{
+                border-bottom: 1px solid #000;
+
+            }
+        }
+    }
+}
