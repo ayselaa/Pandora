@@ -711,23 +711,5 @@
         </div>
       </footer>
     <script src="./js/script.js"></script>
-    <script>
-      let hiddenLis = [];
-      const loadMoreBtn = document.getElementById("load-more-button");
-
-      loadMoreBtn.addEventListener("click", function loadMore() {
-        let lis = document.querySelectorAll(".kolleksiya__box");
-        for (let i = 0; i < lis.length; i++) {
-          const displayStyle = getComputedStyle(lis[i]).display;
-          if (displayStyle === "none") {
-            hiddenLis.push(lis[i]);
-          }
-        }
-        for (let i = 0; i < 8; i++) {
-          hiddenLis[i].style.display = null;
-          loadMoreBtn.style.display = "none"
-        }
-      });
-    </script>
   </body>
 </html>

@@ -807,53 +807,5 @@
       </div>
     </footer>
     <script src="./js/script.js"></script>
-    <script>
-      let hiddenLis = [];
-      const loadMoreBtn = document.getElementById("load-more-button");
-
-      loadMoreBtn.addEventListener("click", function loadMore() {
-        let lis = document.querySelectorAll(".kolleksiya__box");
-        for (let i = 0; i < lis.length; i++) {
-          const displayStyle = getComputedStyle(lis[i]).display;
-          if (displayStyle === "none") {
-            hiddenLis.push(lis[i]);
-          }
-        }
-        for (let i = 0; i < 8; i++) {
-          hiddenLis[i].style.display = null;
-          loadMoreBtn.style.display = "none";
-        }
-      });
-    </script>
-    <script>
-      function addClassOnMobile(elementId, className) {
-        var element = document.getElementById(elementId);
-        if (window.innerWidth <= 900) {
-          element.classList.add(className);
-        } else {
-          element.classList.remove(className);
-        }
-      }
-
-      // Call the function on page load and window resize
-      function addClassOnMobile(selector, classNameMob) {
-        document.querySelectorAll(selector).forEach(function (element) {
-          if (window.innerWidth <= 900) {
-            element.classList.add(classNameMob);
-          } else {
-            element.classList.remove(classNameMob);
-          }
-        });
-      }
-
-      // Call the function on page load and window resize
-      window.addEventListener("load", function () {
-        addClassOnMobile(".order__card-count-numMob", "qty");
-      });
-
-      window.addEventListener("resize", function () {
-        addClassOnMobile(".order__card-count-numMob", "qty");
-      });
-    </script>
   </body>
 </html>
