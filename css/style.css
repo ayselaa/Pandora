@@ -534,7 +534,7 @@
   }
 }
 
-.login__title {
+__title {
   font-family: "PanText", sans-serif;
   font-size: 23px;
   font-weight: 400;
@@ -542,7 +542,7 @@
   text-align: center;
 }
 
-.login__subtitle {
+__subtitle {
   font-family: "PanText", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -551,12 +551,12 @@
   margin: 40px 0 38px;
 }
 
-.login .setup {
+ .setup {
   width: 446px;
   margin: 0 auto;
 }
 
-.login .setup__flex {
+ .setup__flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -569,20 +569,20 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .login .setup__flex {
+   .setup__flex {
     display: block;
   }
 }
 
-.login .setup__box-form {
+ .setup__box-form {
   margin-top: 41px;
 }
 
-.login .setup__box-group {
+ .setup__box-group {
   margin-bottom: 22px;
 }
 
-.login .setup__box-input {
+ .setup__box-input {
   width: 100%;
   height: 45px;
   padding-left: 20px;
@@ -592,11 +592,11 @@
   resize: none;
 }
 
-.login .setup__box-input:focus {
+ .setup__box-input:focus {
   outline: none;
 }
 
-.login .setup__box-forget, .login .setup__box-register {
+ .setup__box-forget,  .setup__box-register {
   display: block;
   text-decoration: underline;
   color: #000000d9;
@@ -606,11 +606,11 @@
   line-height: 23px;
 }
 
-.login .setup__box-register {
+ .setup__box-register {
   text-align: center;
 }
 
-.login .setup__box-submit {
+ .setup__box-submit {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -622,7 +622,11 @@
           align-items: center;
 }
 
-.login .setup__box-submit, .login .setup__box-submitContact {
+.login__subtitle{
+  margin-bottom: 2rem !important;
+}
+
+ .setup__box-submit,  .setup__box-submitContact {
   height: 47px;
   width: 139px;
   margin: 45px auto 20px;
@@ -638,9 +642,9 @@
   border: none;
 }
 
-.login .forgotPass,
-.login .registerPass {
-  display: none;
+ .forgotPass,
+ .registerPass {
+
   width: 446px;
   margin: 0 auto;
 }

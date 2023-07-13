@@ -1,25 +1,28 @@
-@import "./header/header";
-@import "./footer/footer";
-@import "./respons";
-@import './component/components';
-@import './scss/varible';
+@import "/header/header";
+@import "/footer/footer";
+@import "/respons";
+@import '/component/components';
+@import '/scss/varible';
 @font-face {
     font-family: 'PanText';
-    src: url(../font/PanText-Light.woff2);
+  /*  src: url(../font/PanText-Light.woff2);*/
+    src: url(~/font/PanText-Light.woff2);
     font-weight: 100;
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: 'PanText';
-    src: url(../font/PanText-Regular.woff2);
+    /*src: url(../font/PanText-Regular.woff2);*/
+    src: url(~/font/PanText-Regular.woff2);
     font-weight: 200;
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: 'PanText';
-    src: url(../font/PanText-Bold.woff2);
+   /* src: url(../font/PanText-Bold.woff2);*/
+    src: url(~/font/PanText-Bold.woff2);
     font-weight: 300;
-  }
+}
 * {
     margin: 0;
     padding: 0;
